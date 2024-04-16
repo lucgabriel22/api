@@ -27,8 +27,8 @@ class Curso(Base):
         verbose_name= 'Curso'
         verbose_name_plural = 'Cursos'
 
-        def __str__(self):
-            return self.titulo
+    def __str__(self):
+        return self.titulo
         
 
 class Avaliacao(Base):
