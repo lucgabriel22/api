@@ -48,13 +48,13 @@ class Avaliacao(Base):
         default=''
     )
     
-    avalicao = models.DecimalField(
+    avaliacao = models.DecimalField(
         max_digits=2,
         decimal_places=1
     )
 
     class Meta:
-        verbose_name = 'Avalicação'
+        verbose_name = 'Avaliação'
         verbose_name_plural = 'Avaliações'
         unique_together = ['email', 'curso']
 
