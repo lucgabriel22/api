@@ -35,6 +35,6 @@ class AvaliacaoAPIView(APIView):
         serializer = AvaliacaoSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response({"status": "adicionado com sucesso!"}, status=status.HTTP_201_CREATED)
     
     
