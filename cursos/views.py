@@ -16,13 +16,13 @@ class CursoAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CursoSerializer
 
 # LISTAR E CRIAR
-class AvaliacaoAPIView(generics.ListCreateAPIView):
+class AvaliacoesAPIView(generics.ListCreateAPIView):
 
     queryset = Avaliacao.objects.all()
     serializer_class = AvaliacaoSerializer
 
 #ATUALIZA E DESTROI
-class AvaliacoesAPIView(generics.RetrieveUpdateDestroyAPIView):
+class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
 
     queryset = Avaliacao.objects.all()
     serializer_class = AvaliacaoSerializer
