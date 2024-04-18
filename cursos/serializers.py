@@ -23,6 +23,10 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
 
 
 class CursoSerializer(serializers.ModelSerializer):
+    avaliacoes = serializers.PrimaryKeyRelatedField(
+        many=True, 
+        read_only=True
+    )
 
     class Meta:
         model = Curso
@@ -31,5 +35,6 @@ class CursoSerializer(serializers.ModelSerializer):
             'titulo',
             'url',
             'criacao',
-            'ativo'
+            'ativo',
+            'avaliacoes'
         )
